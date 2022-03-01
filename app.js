@@ -8,8 +8,11 @@ function bindValues(){
 		console.log(this.innerHTML);
 		if(this.innerHTML == 0)
 			this.innerHTML = "1";
-		else
+		else if(this.innerHTML == 1)
+			this.innerHTML = "d";
+		else if(this.innerHTML == "d")
 			this.innerHTML = "0";
+
 	});
 }
 
