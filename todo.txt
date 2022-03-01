@@ -1,0 +1,7 @@
+################
+##### TODO #####
+################
+
+* everything lol
+* More than just 4-var kmaps
+* Support more than x implicants

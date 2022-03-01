@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Karnaugh Maps</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+	</head>
+
+	<body>
+		<table class="kmap">
+			<tr>
+				<td class="lines">AB<br>CD</td>
+				<td class="label top">00</td>
+				<td class="label top">01</td>
+				<td class="label top">11</td>
+				<td class="label top">10</td>
+			</tr>
+			<tr>
+				<td class="label left">00</td>
+				<td id="testCell">
+					<strong class="value" >0</strong>
+					<small class="minterm">0</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">4</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">12</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">8</small>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="label left">01</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">1</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">5</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">13</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">9</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="label left">11</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">3</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">7</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">15</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">11</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="label left">10</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">2</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">6</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">14</small>
+				</td>
+				<td>
+					<strong class="value">0</strong>
+					<small class="minterm">10</small>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
