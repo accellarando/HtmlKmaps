@@ -1,7 +1,6 @@
 /* Page load */
 $(document).ready(function(){
 	bindValues();
-	addToImplicant("blue",$("#testCell"));
 });
 
 function bindValues(){
