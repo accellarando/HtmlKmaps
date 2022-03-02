@@ -1,5 +1,7 @@
 # HTML Karnaugh Map Generator
 
+View at https://accellarando.github.io/HtmlKmaps/
+
 I started writing this to help me out with a homework assignment because I'm too stubborn to use LaTeX.
 
 Then I realized this is actually much more work than I had anticipated.
