@@ -1,8 +1,0 @@
-################
-##### TODO #####
-################
-
-* Instructions on the page
-* <input>s to take addImplicant()'s parameters, then execute it
-* Full support for 5 variables
-* Download image
