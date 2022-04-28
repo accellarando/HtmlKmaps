@@ -2,6 +2,7 @@
 ##### TODO #####
 ################
 
-* everything lol
-* More than just 4-var kmaps
-* Support more than x implicants
+* Instructions on the page
+* <input>s to take addImplicant()'s parameters, then execute it
+* Full support for 5 variables
+* Download image

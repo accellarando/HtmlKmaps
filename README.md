@@ -4,9 +4,7 @@ View at https://accellarando.github.io/HtmlKmaps/
 
 I started writing this to help me out with a homework assignment because I'm too stubborn to use LaTeX.
 
-Then I realized this is actually much more work than I had anticipated.
-
-So it's in this half-complete state, I use it as a scratchpad and just use the console and Inspect Element to draw the implicants.
+Right now you have to go into the console to use it (see Features). One day that might not be the case, but it's finals right now
 
 ## Features
 - You can click on 0s to change to 1s or ds, etc
@@ -14,7 +12,8 @@ So it's in this half-complete state, I use it as a scratchpad and just use the c
 - that's about it
 
 ## Todo
-- Everything else
-- See todo.txt
+- Instructions on the page
+- <input>s to take addImplicant()'s parameters, then execute it
+- Full support for 5 variables
+- Download image
 
-I might finish this project someday. I might not. Time will tell.
