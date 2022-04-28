@@ -16,17 +16,30 @@ function bindValues(){
 	});
 }
 
-function addToImplicant(color,obj){
-	var p = obj.offset();
+function addToImplicant(color,topLeft,bottomRight){
+	var topLeftMinterm = $("#mt"+topLeft);
+	var bottomRightMinterm = $("#mt"+bottomRight);
+
+	var topLeftCoord = topLeftMinterm.offset();
+	var bottomRightCoord = bottomRightMinterm.offset();
+	console.log(bottomRightCoord);
+	bottomRightCoord.top += bottomRightMinterm.height();
+	bottomRightCoord.left += bottomRightMinterm.width();
+	console.log(bottomRightCoord);
+
+	var topCoord = topLeftCoord.top + 2;
+	var leftCoord = topLeftCoord.left + 2;
+	
+	//var height = topLeftCoord.top-bottomRightCoord.top;
+	var height = bottomRightCoord.top - topLeftCoord.top - 4;
+	var width = bottomRightCoord.left-topLeftCoord.left - 4;
+
 	var implicant = $(document.createElement('span'));
-	implicant.addClass("implicant").addClass("color");
-	implicant.css("height","42px")
-		.css("width","40px")
-		.css("top",p.top+2)
-		.css("left",p.left+2)
+	implicant.addClass("implicant").addClass(color);
+	implicant.css("height",height)
+		.css("width",width)
+		.css("top",topCoord)
+		.css("left",leftCoord)
 		.css("border-color",color);
-	console.log(implicant);
-	obj.append(implicant);
-	//obj.css("border-radius","5px")
-		//.css("border","3px solid "+color);
+	topLeftMinterm.append(implicant);
 }
