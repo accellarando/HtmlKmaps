@@ -12,8 +12,8 @@ Right now you have to go into the console to use it (see Features). One day that
 - that's about it
 
 ## Todo
+- Select different numbers of variables
 - Instructions on the page
 - <input>s to take addImplicant()'s parameters, then execute it
 - Full support for 5 variables
 - Download image
-
