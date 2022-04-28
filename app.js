@@ -5,7 +5,6 @@ $(document).ready(function(){
 
 function bindValues(){
 	$(".value").click(this,function(e){
-		console.log(this.innerHTML);
 		if(this.innerHTML == 0)
 			this.innerHTML = "1";
 		else if(this.innerHTML == 1)
@@ -42,4 +41,8 @@ function addToImplicant(color,topLeft,bottomRight){
 		.css("left",leftCoord)
 		.css("border-color",color);
 	topLeftMinterm.append(implicant);
+}
+
+function removeImplicant(color){
+	$("."+color).remove();
 }
