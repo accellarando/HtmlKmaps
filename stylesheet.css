@@ -1,0 +1,80 @@
+.contain{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+table, th, td{
+    border:2px solid;
+    border-collapse:collapse;
+    font-size:40px;
+    user-select:none;
+}
+
+.minterm{
+    font-size:12px;
+    position: relative;
+    bottom: -10px;
+    right: 2px;
+}
+
+.value{
+
+}
+
+.lines{
+    border-style:hidden;
+}
+
+.label{
+    border-style:hidden;
+    position: relative;
+    z-index:1;
+}
+
+.label.top{
+    border-bottom:2px solid;
+}
+
+.label.left{
+    border-right:2px solid;
+}
+
+.lines{
+    width:28px;
+    height:28px;
+    font-size: 18px;
+    transform: rotate(45deg);
+    line-height: 28px;
+    vertical-align: text-bottom;
+    position: relative;
+    top: 9px;
+}
+.lines:after{
+    content: "";
+    position: absolute;
+    border-top: 2px solid;
+    width: 65px;
+    transform-origin: 0% 0%;
+    top: 25px;
+    left: -6px;
+}
+
+.implicant{
+    position:absolute;
+    border: 5px solid;
+    border-radius:10px;
+    z-index:-1;
+}
+
+.console{
+    text-align:center;
+}
+
+.lines input{
+    border:none;
+    padding:0;
+    font-size:18px;
+    font-family:serif;
+    text-align:center;
+}
