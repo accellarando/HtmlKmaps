@@ -18,10 +18,6 @@ table, th, td{
     right: 2px;
 }
 
-.value{
-
-}
-
 .lines{
     border-style:hidden;
 }
@@ -49,7 +45,21 @@ table, th, td{
     vertical-align: text-bottom;
     position: relative;
     top: 9px;
+    border-style:hidden;
 }
+
+.label{
+	border-style:hidden;
+}
+
+.label.top{
+	border-bottom:2px solid;
+}
+
+.label.left{
+	border-right:2px solid;
+}
+
 .lines:after{
     content: "";
     position: absolute;
@@ -58,13 +68,6 @@ table, th, td{
     transform-origin: 0% 0%;
     top: 25px;
     left: -6px;
-}
-
-.implicant{
-    position:absolute;
-    border: 5px solid;
-    border-radius:10px;
-    z-index:-1;
 }
 
 .console{
@@ -77,4 +80,11 @@ table, th, td{
     font-size:18px;
     font-family:serif;
     text-align:center;
+}
+
+.implicant{
+	position:absolute;
+	border: 2px solid;
+	border-radius:5px;
+	z-index:-1;
 }

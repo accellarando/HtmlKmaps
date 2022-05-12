@@ -66,4 +66,3 @@ function clearImplicants(){
 	$(".implicant").remove();
 }
 
-
