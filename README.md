@@ -1,4 +1,4 @@
-# HTML Karnaugh Map Generator
+# HTML/jQuery Karnaugh Map Drawing Tool
 
 View at https://accellarando.github.io/HtmlKmaps/
 
