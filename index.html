@@ -9,193 +9,193 @@
 
 	<body>
 		<div class="contain">
-			<div style="text-align:center">
-			<table class="kmap">
-				<tr>
-					<td class="lines">
-						<input id="ab1" type="text" size="2" value="AB">
-						<br>
-						<input id="cd1" type="text" size="2" value="CD">
-					</td>
-					<td class="label top">00</td>
-					<td class="label top">01</td>
-					<td class="label top">11</td>
-					<td class="label top">10</td>
-				</tr>
-				<tr>
-					<td class="label left">00</td>
-					<td id="mt0">
-						<strong class="value" >0</strong>
-						<small class="minterm">0</small>
-					</td>
-					<td id="mt4">
-						<strong class="value">0</strong>
-						<small class="minterm">4</small>
-					</td>
-					<td id="mt12">
-						<strong class="value">0</strong>
-						<small class="minterm">12</small>
-					</td>
-					<td id="mt8">
-						<strong class="value">0</strong>
-						<small class="minterm">8</small>
-					</td>
-				</tr>
+			<div style="text-align:center" class="e0">
+				<table class="kmap">
+					<tr>
+						<td class="lines">
+							<input id="ab1" type="text" size="2" value="AB">
+							<br>
+							<input id="cd1" type="text" size="2" value="CD">
+						</td>
+						<td class="label top zero">00</td>
+						<td class="label top one">01</td>
+						<td class="label top three">11</td>
+						<td class="label top two">10</td>
+					</tr>
+					<tr class="row zero">
+						<td class="label left zero">00</td>
+						<td id="mt0" class="col zero">
+							<strong class="value" >0</strong>
+							<small class="minterm">0</small>
+						</td>
+						<td id="mt4" class="col one">
+							<strong class="value">0</strong>
+							<small class="minterm">4</small>
+						</td>
+						<td id="mt12" class="col three">
+							<strong class="value">0</strong>
+							<small class="minterm">12</small>
+						</td>
+						<td id="mt8" class="col two">
+							<strong class="value">0</strong>
+							<small class="minterm">8</small>
+						</td>
+					</tr>
 
-				<tr>
-					<td class="label left">01</td>
-					<td id="mt1">
-						<strong class="value">0</strong>
-						<small class="minterm">1</small>
-					</td>
-					<td id="mt5">
-						<strong class="value">0</strong>
-						<small class="minterm">5</small>
-					</td>
-					<td id="mt13">
-						<strong class="value">0</strong>
-						<small class="minterm">13</small>
-					</td>
-					<td id="mt9">
-						<strong class="value">0</strong>
-						<small class="minterm">9</small>
-					</td>
-				</tr>
-				<tr>
-					<td class="label left">11</td>
-					<td id="mt3">
-						<strong class="value">0</strong>
-						<small class="minterm">3</small>
-					</td>
-					<td id="mt7">
-						<strong class="value">0</strong>
-						<small class="minterm">7</small>
-					</td>
-					<td id="mt15">
-						<strong class="value">0</strong>
-						<small class="minterm">15</small>
-					</td>
-					<td id="mt11">
-						<strong class="value">0</strong>
-						<small class="minterm">11</small>
-					</td>
-				</tr>
-				<tr>
-					<td class="label left">10</td>
-					<td id="mt2">
-						<strong class="value">0</strong>
-						<small class="minterm">2</small>
-					</td>
-					<td id="mt6">
-						<strong class="value">0</strong>
-						<small class="minterm">6</small>
-					</td>
-					<td id="mt14">
-						<strong class="value">0</strong>
-						<small class="minterm">14</small>
-					</td>
-					<td id="mt10">
-						<strong class="value">0</strong>
-						<small class="minterm">10</small>
-					</td>
-				</tr>
-			</table>
-			<br>
-			E=0
+					<tr class="row one">
+						<td class="label left one">01</td>
+						<td id="mt1" class="col zero">
+							<strong class="value">0</strong>
+							<small class="minterm">1</small>
+						</td>
+						<td id="mt5" class="col one">
+							<strong class="value">0</strong>
+							<small class="minterm">5</small>
+						</td>
+						<td id="mt13" class="col three">
+							<strong class="value">0</strong>
+							<small class="minterm">13</small>
+						</td>
+						<td id="mt9" class="col two">
+							<strong class="value">0</strong>
+							<small class="minterm">9</small>
+						</td>
+					</tr>
+					<tr class="row three">
+						<td class="label left three">11</td>
+						<td id="mt3" class="col zero">
+							<strong class="value">0</strong>
+							<small class="minterm">3</small>
+						</td>
+						<td id="mt7" class="col one">
+							<strong class="value">0</strong>
+							<small class="minterm">7</small>
+						</td>
+						<td id="mt15" class="col three">
+							<strong class="value">0</strong>
+							<small class="minterm">15</small>
+						</td>
+						<td id="mt11" class="col two">
+							<strong class="value">0</strong>
+							<small class="minterm">11</small>
+						</td>
+					</tr>
+					<tr class="row two">
+						<td class="label left two">10</td>
+						<td id="mt2" class="col zero">
+							<strong class="value">0</strong>
+							<small class="minterm">2</small>
+						</td>
+						<td id="mt6" class="col one">
+							<strong class="value">0</strong>
+							<small class="minterm">6</small>
+						</td>
+						<td id="mt14" class="col three">
+							<strong class="value">0</strong>
+							<small class="minterm">14</small>
+						</td>
+						<td id="mt10" class="col two">
+							<strong class="value">0</strong>
+							<small class="minterm">10</small>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<p class="elabel">E=0</p>
 			</div>
-			<div style="text-align:center">
-			<table class="kmap">
-				<tr>
-					<td class="lines">
-						<input id="ab2" type="text" size="2" value="AB">
-						<br>
-						<input id="cd2" type="text" size="2" value="CD">
-					</td>
-					<td class="label top">00</td>
-					<td class="label top">01</td>
-					<td class="label top">11</td>
-					<td class="label top">10</td>
-				</tr>
-				<tr>
-					<td class="label left">00</td>
-					<td id="mt16">
-						<strong class="value" >0</strong>
-						<small class="minterm">16</small>
-					</td>
-					<td id="mt20">
-						<strong class="value">0</strong>
-						<small class="minterm">20</small>
-					</td>
-					<td id="mt28">
-						<strong class="value">0</strong>
-						<small class="minterm">28</small>
-					</td>
-					<td id="mt24">
-						<strong class="value">0</strong>
-						<small class="minterm">24</small>
-					</td>
-				</tr>
+			<div style="text-align:center" class="e1">
+				<table class="kmap">
+					<tr>
+						<td class="lines">
+							<input id="ab2" type="text" size="2" value="AB">
+							<br>
+							<input id="cd2" type="text" size="2" value="CD">
+						</td>
+						<td class="label top">00</td>
+						<td class="label top">01</td>
+						<td class="label top">11</td>
+						<td class="label top">10</td>
+					</tr>
+					<tr>
+						<td class="label left">00</td>
+						<td id="mt16">
+							<strong class="value" >0</strong>
+							<small class="minterm">16</small>
+						</td>
+						<td id="mt20">
+							<strong class="value">0</strong>
+							<small class="minterm">20</small>
+						</td>
+						<td id="mt28">
+							<strong class="value">0</strong>
+							<small class="minterm">28</small>
+						</td>
+						<td id="mt24">
+							<strong class="value">0</strong>
+							<small class="minterm">24</small>
+						</td>
+					</tr>
 
-				<tr>
-					<td class="label left">01</td>
-					<td id="mt17">
-						<strong class="value">0</strong>
-						<small class="minterm">17</small>
-					</td>
-					<td id="mt21">
-						<strong class="value">0</strong>
-						<small class="minterm">21</small>
-					</td>
-					<td id="mt29">
-						<strong class="value">0</strong>
-						<small class="minterm">29</small>
-					</td>
-					<td id="mt25">
-						<strong class="value">0</strong>
-						<small class="minterm">25</small>
-					</td>
-				</tr>
-				<tr>
-					<td class="label left">11</td>
-					<td id="mt19">
-						<strong class="value">0</strong>
-						<small class="minterm">19</small>
-					</td>
-					<td id="mt23">
-						<strong class="value">0</strong>
-						<small class="minterm">23</small>
-					</td>
-					<td id="mt31">
-						<strong class="value">0</strong>
-						<small class="minterm">31</small>
-					</td>
-					<td id="mt27">
-						<strong class="value">0</strong>
-						<small class="minterm">27</small>
-					</td>
-				</tr>
-				<tr>
-					<td class="label left">10</td>
-					<td id="mt18">
-						<strong class="value">0</strong>
-						<small class="minterm">18</small>
-					</td>
-					<td id="mt22">
-						<strong class="value">0</strong>
-						<small class="minterm">22</small>
-					</td>
-					<td id="mt30">
-						<strong class="value">0</strong>
-						<small class="minterm">30</small>
-					</td>
-					<td id="mt26">
-						<strong class="value">0</strong>
-						<small class="minterm">26</small>
-					</td>
-				</tr>
-			</table>
-			<br>
-			E=1
+					<tr>
+						<td class="label left">01</td>
+						<td id="mt17">
+							<strong class="value">0</strong>
+							<small class="minterm">17</small>
+						</td>
+						<td id="mt21">
+							<strong class="value">0</strong>
+							<small class="minterm">21</small>
+						</td>
+						<td id="mt29">
+							<strong class="value">0</strong>
+							<small class="minterm">29</small>
+						</td>
+						<td id="mt25">
+							<strong class="value">0</strong>
+							<small class="minterm">25</small>
+						</td>
+					</tr>
+					<tr>
+						<td class="label left">11</td>
+						<td id="mt19">
+							<strong class="value">0</strong>
+							<small class="minterm">19</small>
+						</td>
+						<td id="mt23">
+							<strong class="value">0</strong>
+							<small class="minterm">23</small>
+						</td>
+						<td id="mt31">
+							<strong class="value">0</strong>
+							<small class="minterm">31</small>
+						</td>
+						<td id="mt27">
+							<strong class="value">0</strong>
+							<small class="minterm">27</small>
+						</td>
+					</tr>
+					<tr>
+						<td class="label left">10</td>
+						<td id="mt18">
+							<strong class="value">0</strong>
+							<small class="minterm">18</small>
+						</td>
+						<td id="mt22">
+							<strong class="value">0</strong>
+							<small class="minterm">22</small>
+						</td>
+						<td id="mt30">
+							<strong class="value">0</strong>
+							<small class="minterm">30</small>
+						</td>
+						<td id="mt26">
+							<strong class="value">0</strong>
+							<small class="minterm">26</small>
+						</td>
+					</tr>
+				</table>
+				<br>
+				E=1
 			</div>
 		</div>
 
@@ -207,9 +207,21 @@
 			<input type="submit" value="Draw!" onclick="draw()">
 			<br>
 
-			Show minterm numbers:
-			<input type="checkbox" class='mintermToggle' checked onclick="checkMintermToggle(this)">
-			<br>
+			<div>
+				<div>
+					<label for="mintermToggle">Show minterm numbers:</label>
+					<input type="checkbox" class='mintermToggle' id="mintermToggle" checked onclick="checkMintermToggle(this)">
+				</div>
+				<div>
+					<label for="varNumSel">Number of variables:</label>
+					<select id="varNumSel" onchange="checkNumVars(this)">
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option selected>5</option>
+					</select>
+				</div>
+			</div>
 
 			<input type="submit" value="Clear implicants" onclick="clearImplicants()">
 		</div>

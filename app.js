@@ -66,3 +66,74 @@ function clearImplicants(){
 	$(".implicant").remove();
 }
 
+function checkNumVars(obj){
+	reset();
+	var numVars = $(obj).val();
+	console.log(numVars);
+
+	switch(numVars){
+		case "2":
+			console.log("2");
+			//hide irrelevant boxes
+			$(".e1").hide();
+			$(".row.three").hide();
+			$(".row.two").hide();
+			$(".col.three").hide();
+			$(".col.two").hide();
+			
+			//hide/change irrelevant labels
+			$(".elabel").hide();
+			$(".label.three").hide();
+			$(".label.two").hide();
+			$(".label.zero").text("0");
+			$(".label.one").text("1");
+			$("#ab1").val("A");
+			$("#cd1").val("B");
+
+			//change minterm labels
+			$("#mt4 > small").text("1");
+			$("#mt1 > small").text("2");
+			$("#mt5 > small").text("3");
+
+			//change minterm ids
+			//move current mt into data-oldmt
+			$("#mt1").attr("data-oldmt","1").attr("id","mt2");
+			$("#mt4").attr("data-oldmt","4").attr("id","mt1");
+			$("#mt5").attr("data-oldmt","5").attr("id","mt3");
+			break;
+		case "3":
+
+			break;
+		case "4":
+			break;
+		default:
+			reset();
+			break;
+	}
+}
+
+function reset(){
+	//show all labels
+	$(".e1").show();
+	$(".row").show();
+	$(".col").show();
+	$(".elabel").show();
+	$(".label").show();
+	$(".label.zero").text("00");
+	$(".label.one").text("01");
+
+	//variable labels
+	$("#ab1").val("AB");
+	$("#ab2").val("AB");
+	$("#cd1").val("CD");
+	$("#cd2").val("CD");
+
+	//fix minterms
+	$(".col").each(function(i, elem){
+		var oldmt = $(elem).attr("data-oldmt");
+		if(oldmt){
+			$(elem).attr("id","mt"+oldmt);
+			$(elem).children("small").text(oldmt);
+		}
+	});
+}
